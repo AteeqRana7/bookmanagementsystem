@@ -1,0 +1,115 @@
+.books-page h1 {
+  text-align: center;
+}
+.books-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+
+.book-card {
+  background-color: rgba(228, 228, 228, 0.575);
+  border: 2px solid rgb(228, 228, 228);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  margin: 1.5rem;
+  max-width: 400px;
+}
+
+.book-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0.3rem 0.5rem 0.3rem;
+}
+
+.book-card-button {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  width: 80px;
+  transition: 0.2s ease-in filter;
+  cursor: pointer;
+}
+
+.book-card-button:hover {
+  filter: brightness(90%);
+}
+
+.edit-btn {
+  background: teal;
+  color: #fff;
+}
+.remove-btn {
+  background: rgb(160, 0, 0);
+  color: #fff;
+}
+
+.light-text {
+  font-weight: 400;
+}
+
+.book-card-header * {
+  margin: 0.5rem 0;
+}
+
+.modal {
+  padding: 2rem;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  position: absolute;
+  background-color: var(--color-accent);
+  z-index: 9;
+  text-align: center;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal button {
+  font-size: 1rem;
+  font-family: var(--font-family);
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  transition: 0.2s ease-in filter;
+  cursor: pointer;
+}
+.modal button:hover {
+  filter: brightness(90%);
+}
+.nav-back-btn {
+  margin-top: 3rem;
+}
+.close-btn {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.hide-modal {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .books-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .book-card-button {
+    width: 90px;
+  }
+  .modal {
+    font-size: 1.5rem;
+  }
+}
